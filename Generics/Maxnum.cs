@@ -8,7 +8,7 @@ namespace Generics
 {
     public class Maxnum
     {
-        public static float MaxIntegerNumber(float val1, float val2, float val3)
+        public static string MaxIntegerNumber(string val1, string val2, string val3)
         {
             if (val1.CompareTo(val2) > 0 && val1.CompareTo(val3) > 0)
                 return val1;

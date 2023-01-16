@@ -6,8 +6,8 @@
         {
             Console.WriteLine("Welcome to Generic Based Problems");
 
-            float output = Maxnum.MaxIntegerNumber(11, 111, 1111);
-            Console.WriteLine("\nMax float number is: " + output);
+            string output = Maxnum.MaxIntegerNumber("Apple", "Peach", "Banana");
+            Console.WriteLine("\nMax string word is: " + output);
         }
     }
 }
