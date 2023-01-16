@@ -1,4 +1,4 @@
-﻿using static Generics.Maxnum;
+﻿
 
 namespace Generics
 {
@@ -9,16 +9,16 @@ namespace Generics
             Console.WriteLine("Welcome to Generic Based Problems");
 
 
-            Maxnum objMaxNumber = new Maxnum();
 
-            int output1 = objMaxNumber.MaxNumber<int>(11, 111, 1111);
-            Console.WriteLine("\nMax integer number is: " + output1);
 
-            float output2 = objMaxNumber.MaxNumber<float>(1, 11, 111);
-            Console.WriteLine("\nMax float number is: " + output2);
+            MaxNumberCheck<int> objint = new MaxNumberCheck<int>(11, 111, 1111);
+            Console.WriteLine("\nMax integer number is: " + objint.MaxMethod());
 
-            string output3 = objMaxNumber.MaxNumber<string>("Apple", "Peach", "Banana");
-            Console.WriteLine("\nMax string word is: " + output3);
+            MaxNumberCheck<float> objfloat = new MaxNumberCheck<float>(1, 11, 111);
+            Console.WriteLine("\nMax float number is: " + objfloat.MaxMethod());
+
+            MaxNumberCheck<string> objstring = new MaxNumberCheck<string>("Apple", "Peach", "Banana");
+            Console.WriteLine("\nMax string word is: " + objstring.MaxMethod());
         }
     }
 }
