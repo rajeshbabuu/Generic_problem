@@ -8,7 +8,7 @@ namespace Generics
         {
             Console.WriteLine("Welcome to Generic Based Problems");
 
-            int output = Maxnum.MaxIntegerNumber(1111, 111, 11);
+            int output = Maxnum.MaxIntegerNumber(11, 1111, 111);
             Console.WriteLine("\nMax integer number is: " + output);
         }
     }
